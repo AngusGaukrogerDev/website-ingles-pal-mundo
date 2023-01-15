@@ -1,7 +1,7 @@
 <template>
     
     <header class="bg-fade1 w-full fixed top-0 z-50">
-    
+        
         <nav class="container px-5 py-6 mx-auto xl:flex xl:justify-between xl:items-center">
             <div class="flex items-center justify-between">
                 <!-- Link Logo to Main Page -->
@@ -53,31 +53,4 @@ let showMenu = ref(false);
 </script>
 
 <style lang="scss" scoped>
-.custom-shape-divider-top-1673798750 {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-}
-
-.custom-shape-divider-top-1673798750 svg {
-    position: relative;
-    display: block;
-    width: calc(138% + 1.3px);
-    height: 190px;
-}
-
-.custom-shape-divider-top-1673798750 .shape-fill {
-    fill: #222626;
-}
-
-/** For tablet devices **/
-@media (min-width: 768px) {
-    .custom-shape-divider-top-1673798750 svg {
-        width: calc(138% + 1.3px);
-    }
-    }
 </style>
