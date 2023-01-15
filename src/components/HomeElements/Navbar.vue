@@ -1,6 +1,6 @@
 <template>
     
-    <header class="bg-fade1 w-full fixed top-0 z-50">
+    <header class="bg-fade1 w-full fixed top-0 z-50 overflow-hidden ">
         
         <nav class="container px-5 py-6 mx-auto xl:flex xl:justify-between xl:items-center">
             <div class="flex items-center justify-between">
@@ -33,7 +33,7 @@
           <li class="text-sm font-bold text-texttone hover:scale-105 hover:text-slate-300 hover:cursor-pointer">
             Escribenos
           </li>
-          <button class="bg-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 ">
+          <button class="bg-main hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 ">
             <strong>¡Reserva tu Leccion Ahora!</strong> 
         </button>
         </ul>
