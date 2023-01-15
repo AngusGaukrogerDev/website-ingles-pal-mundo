@@ -17,10 +17,10 @@
             enter-to="opacity-100 rotate-0 scale-100"
             leave="transform duration-500 transition ease-in-out"
             leave-from="opacity-100 rotate-0 scale-100 "
-            leave-to="opacity-0 scale-95"><strong> {{ randomWord }}</strong>
+            leave-to="opacity-0 scale-95"><strong > {{ randomWord }}</strong>
             </TransitionRoot></h1>
             <h2 class="sm:text-2xl text-lg  py-2 text-left">¡Aprende Inglés Cómo Quieras!</h2>
-            <button class="bg-main my-2 hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5">Empeza Hoy</button>
+            <button class="bg-gradient-to-r from-main to-highlight my-2 hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5">Empeza Hoy</button>
         </div>
         
     </section>

@@ -5,8 +5,8 @@
         <nav class="container px-5 py-6 mx-auto xl:flex xl:justify-between xl:items-center">
             <div class="flex items-center justify-between">
                 <!-- Link Logo to Main Page -->
-                <router-link to="/" class="underline text-xl font-bold text-texttone hover:scale-105 xl:text-2xl hover:text-texttonehover">
-                    InglésPalMundo
+                <router-link to="/" class="  ">
+                   <h1 class="font-bold text-2xl text-texttone text-transparent bg-clip-text bg-gradient-to-r from-main to-highlight">InglésPalMundo</h1>
                 </router-link>
                 <!-- Mobile menu button -->
                 <div @click="showMenu = !showMenu" class="flex xl:hidden">
@@ -33,7 +33,7 @@
           <li class="text-sm font-bold text-texttone hover:scale-105 hover:text-slate-300 hover:cursor-pointer">
             Escribenos
           </li>
-          <button class="bg-main hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 ">
+          <button class="bg-gradient-to-r from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 ">
             <strong>¡Reserva tu Leccion Ahora!</strong> 
         </button>
         </ul>
