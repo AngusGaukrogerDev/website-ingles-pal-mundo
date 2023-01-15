@@ -1,13 +1,23 @@
-<template>
-    <div >
-        <h1 class="aos-item font-extrabold text-3xl" data-aos="fade-left">Everything Installed Successfully
-         - GLHF</h1>
-        <p class="my-5">Stack: Vue3+Vite, Tailwind CSS, Vue Router, VueX, VueUse, Headless UI, AOS, ESLint, Prettier</p>
-        <p class="">Name in store: {{name}} ... This value is determined by VueX</p>
-    </div>
+<template class="bg-slate-200">
+    <Navbar />
+    <Hero />
+    <Info />
+    <Book />
+    <Contact />
+    <Footer />
 </template>
 
 <script setup>
+
+    import Navbar from './HomeElements/Navbar.vue';
+    import Hero from './HomeElements/Hero.vue';
+    import Info from './HomeElements/Info.vue';
+    import Book from './HomeElements/Book.vue';
+    import Contact from './HomeElements/Contact.vue';
+    import Footer from './HomeElements/Footer.vue';
+
+
+
     import {computed} from 'vue';
     import {useStore} from 'vuex';
 
