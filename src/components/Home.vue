@@ -1,10 +1,13 @@
-<template class="bg-slate-200">
+<template class=" ">
     <Navbar />
-    <Hero />
-    <Info />
-    <Book />
-    <Contact />
-    <Footer />
+
+        <Hero />
+        <Info />
+        <Book />
+        <Contact />
+        <Footer />
+
+    
 </template>
 
 <script setup>
