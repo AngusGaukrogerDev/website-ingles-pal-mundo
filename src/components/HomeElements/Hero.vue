@@ -6,9 +6,9 @@
     </div>
     <section class="h-screen w-screen bg-texttonehover flex  flex-col justify-around  mx-auto z-0 relative top-0 left-0">
         <div class="py-8 px-4  mx-auto max-w-screen-xl text-left lg:py-16 lg:px-12">
-            <h1 class="text-7xl  py-2 text-left">Lecciones de <strong>Inglés</strong>...</h1> 
-            <h1 class="text-7xl  py-2 text-left">Para <strong class="text-7x">Ingenieros</strong>!</h1>
-            <h2 class="text-2xl text-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam commodi repellendus officia quas. </h2>
+            <h1 class="sm:text-7xl text-3xl  py-2 text-left">Lecciones de <strong>Inglés</strong>...</h1> 
+            <h1 class="sm:text-7xl text-3xl   py-2 text-left">Para <strong>Ingenieros</strong>!</h1>
+            <h2 class="sm:text-2xl text-medium  py-2 text-left">¡Aprende Inglés como quieras!.</h2>
         </div>
         
     </section>
@@ -48,7 +48,7 @@
     position: relative;
     display: block;
     width: calc(138% + 1.3px);
-    height: 184px;
+    height: 160px;
 }
 
 .custom-shape-divider-bottom-1673798205 .shape-fill {
@@ -68,7 +68,7 @@
     position: relative;
     display: block;
     width: calc(138% + 1.3px);
-    height: 260px;
+    height: 190px;
 }
 
 .custom-shape-divider-top-1673798750 .shape-fill {
@@ -76,10 +76,13 @@
 }
 
 /** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) {
     .custom-shape-divider-top-1673798750 svg {
         width: calc(138% + 1.3px);
-        height: 242px;
+        height: 215px;
     }
 }
+/** For Bigger Screens**/
+
+
 </style>
