@@ -7,8 +7,8 @@
     <section class="h-screen w-100 bg-texttonehover flex  flex-col justify-around  mx-auto z-0 relative top-0 left-0">
         <div class="md:visible"></div>
         <div class="py-8 px-4  mx-auto   text-left lg:py-16 lg:px-12">
-            <h1 class="sm:text-7xl text-5xl  py-2 ">Lecciones de <strong>Inglés</strong></h1> 
-            <h1 class="sm:text-7xl text-5xl  py-2 ">Para <TransitionRoot
+            <h1 class="animate__animated animate__slideInLeft  sm:text-7xl text-5xl  py-2 ">Lecciones de <strong>Inglés</strong></h1> 
+            <h1 class="animate__animated animate__slideInLeft  sm:text-7xl text-5xl  py-2 ">Para <TransitionRoot
                 appear
             :show="isShowing"
             as="template"
@@ -34,7 +34,7 @@
 <script setup>
     import {ref, onMounted} from 'vue';
     import { TransitionRoot } from '@headlessui/vue'
-
+    import 'animate.css';
     const isShowing = ref(true)
 
     const words = ["Ingenieros", "Empresarios", "Estudiantes", "Viajeros",
