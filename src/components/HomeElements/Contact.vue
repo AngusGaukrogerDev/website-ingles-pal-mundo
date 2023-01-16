@@ -1,6 +1,6 @@
 <template>
     <div>
-        <section class="relative h-screen w-screen flex flex-row justify-center items-center z-0">
+        <section class="relative h-screen w-100 flex flex-row justify-center items-center z-0">
             Contact
         </section>
     </div>

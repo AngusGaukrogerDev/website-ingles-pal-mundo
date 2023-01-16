@@ -5,7 +5,7 @@
                 <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
             </svg>
         </div>
-        <section class="relative h-screen w-screen flex flex-row justify-center items-center z-0">
+        <section class="relative h-screen w-100 flex flex-row justify-center items-center z-0">
             Book
         </section>
     </div>
@@ -18,7 +18,7 @@
 <style lang="scss" scoped>
 
 .custom-shape-divider-top-1673808758{
-    width: 100%;
+    width: 100vw;
     overflow: hidden;
 }
 

@@ -1,14 +1,14 @@
 <template>
-    <div class="custom-shape-divider-top-1673798750 fixed top-0 overflow-hidden">
+    <div class="custom-shape-divider-top-1673798750 fixed top-0 w-100">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>
     </div>
-    <section class="h-screen w-screen bg-texttonehover flex  flex-col justify-around  mx-auto z-0 relative top-0 left-0">
+    <section class="h-screen w-100 bg-texttonehover flex  flex-col justify-around  mx-auto z-0 relative top-0 left-0">
         <div class="md:visible"></div>
-        <div class="py-8 px-4  mx-auto  text-left lg:py-16 lg:px-12">
-            <h1 class="sm:text-7xl text-5xl  py-2 text-left">Lecciones de <strong>Inglés</strong></h1> 
-            <h1 class="sm:text-7xl text-5xl   py-2 text-left">Para <TransitionRoot
+        <div class="py-8 px-4  mx-auto   text-left lg:py-16 lg:px-12">
+            <h1 class="sm:text-7xl text-5xl  py-2 ">Lecciones de <strong>Inglés</strong></h1> 
+            <h1 class="sm:text-7xl text-5xl  py-2 ">Para <TransitionRoot
                 appear
             :show="isShowing"
             as="template"
@@ -19,12 +19,12 @@
             leave-from="opacity-100 rotate-0 scale-100 "
             leave-to="opacity-0 scale-95"><strong > {{ randomWord }}</strong>
             </TransitionRoot></h1>
-            <h2 class="sm:text-2xl text-lg  py-2 text-left">¡Aprende Inglés Cómo Quieras!</h2>
-            <button class="bg-gradient-to-r from-main to-highlight my-2 hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5">Empeza Hoy</button>
+            <h2 class="sm:text-2xl text-lg  py-2 ">¡Aprende Inglés Cómo Quieras!</h2>
+            <button class="shadow-2xl font-bold bg-gradient-to-r from-main to-highlight my-2 hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5">Empeza Hoy</button>
         </div>
         
     </section>
-    <div class="custom-shape-divider-bottom-1673798205">
+    <div class="   custom-shape-divider-bottom-1673798205">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
         <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
     </svg>
@@ -109,7 +109,7 @@
 .custom-shape-divider-top-1673798750 svg {
     position: relative;
     display: block;
-    width: calc(138% + 1.3px);
+    width: 138%;
     height: 190px;
 }
 

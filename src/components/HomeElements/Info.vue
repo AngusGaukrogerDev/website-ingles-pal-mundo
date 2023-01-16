@@ -1,11 +1,15 @@
-<template>
-    
-    <section class="bg-fade1 relative h-screen w-screen flex flex-row justify-between items-center z-0">
-        <div>
-            col1
+<template>  
+    <section class="bg-fade1 flex-wrap-reverse xl:flex-nowrap w-100 relative h-screen flex sm:flex-row justify-around items-center z-0">
+        <div class=" flex  flex-col justify-center items-center px-6">
+            <div></div>
+            <h1 class="sm:text-6xl text-4xl text-texttone text-center py-2 ">Personalizado a tus <strong>Deseos</strong></h1> 
+            <h2 class="sm:text-xl text-lg text-texttone py-2 text-center sm:mt-3">Ofrecemos lecciones personalizadas a lo que necesites. Clases <strong>individuales</strong> o <strong>en grupos</strong>, para tu <strong>carera</strong> o tus <strong>viajes</strong>, te podríamos <strong>ayudar</strong>! </h2>
+            <h2 class="sm:text-xl text-lg text-texttone py-2 text-center sm:mt-3">Todos nuestros profesores son nativos en Inglés y hablan Español también. Queremos que aprendes a <strong>hablar</strong> y <strong>escribir</strong> el Inglés en una forma <strong>natural</strong>.</h2>
+
         </div>
-        <div>
-            col1
+
+        <div class="flex flex-col justify-center items-evenly">
+            <img class="rounded-lg border-4 sm:border-8 border-texttone scale-50 xl:scale-75" src="../../assets/videocall.jpg" />
         </div>
         
     </section>
