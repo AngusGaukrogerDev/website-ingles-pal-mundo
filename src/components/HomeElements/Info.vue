@@ -3,8 +3,10 @@
         <div class=" flex  flex-col justify-center items-center px-6">
             <div></div>
             <h1 class="sm:text-6xl text-4xl text-texttone text-center py-2 ">Personalizado a tus <strong>Deseos</strong></h1> 
-            <h2 class="sm:text-xl text-lg text-texttone py-2 text-center sm:mt-3">Ofrecemos lecciones personalizadas a lo que necesites. Clases <strong>individuales</strong> o <strong>en grupos</strong>, para tu <strong>carera</strong> o tus <strong>viajes</strong>, te podríamos <strong>ayudar</strong>! </h2>
-            <h2 class="sm:text-xl text-lg text-texttone py-2 text-center sm:mt-3">Todos nuestros profesores son nativos en Inglés y hablan Español también. Queremos que aprendes a <strong>hablar</strong> y <strong>escribir</strong> el Inglés en una forma <strong>natural</strong>.</h2>
+            <h2 class="sm:text-3xl text-xl text-texttone py-2 text-center sm:mt-3">¡Aprende inglés de manera <strong>eficiente</strong> y <strong>cómoda</strong> con InglésPalMundo! </h2>
+            <h2 class="sm:text-xl text-lg text-texttone py-2 text-center sm:mt-3">Ofrecemos clases privadas o en grupos en línea para <strong>inglés general, inglés para ingenieros</strong> y <strong>inglés para negocios</strong>. </h2>
+            <h2 class="sm:text-xl text-lg text-texttone py-2 text-center sm:mt-3">Todos nuestros tutores son <strong>hablantes nativos</strong> y también <strong>hablan español</strong>.</h2>
+            <h2 class="sm:text-xl text-lg text-texttone py-2 text-center sm:mt-3">¡Mejora tus habilidades de inglés hoy mismo con InglésPalMundo!</h2>
 
         </div>
 

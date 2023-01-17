@@ -26,10 +26,12 @@
             <a href="#SobreNosotros" >Sobre Nosotros</a> 
           </li>
           <li class="text-sm font-bold text-texttone hover:scale-105 hover:text-slate-300 hover:cursor-pointer">
-            Calificaciones
+            <a href="#Precios" >Precios</a> 
+
           </li>
           <li class="text-sm font-bold text-texttone hover:scale-105 hover:text-slate-300 hover:cursor-pointer">
-            Escribenos
+            <a href="#Escribenos" >Escribenos</a> 
+
           </li>
           <button class="bg-gradient-to-r from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 ">
             <strong>¡Reserva tu Leccion Ahora!</strong> 

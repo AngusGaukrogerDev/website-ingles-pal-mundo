@@ -5,17 +5,36 @@
                 <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
             </svg>
         </div>
-        <section class="relative h-screen w-100 flex flex-row justify-center items-center z-0">
-            Book
+        <section id="Precios" class="relative h-screen w-100 flex flex-col space-y-8 justify-center z-0">
+            <h1 class="text-fade1 sm:text-7xl text-5xl text-center font-bold py-2 ">Precios</h1> 
+            <div  class="w-100 h-100 text-texttone flex flex-row justify-around items-center">         
+                <div v-for="item in pricingStruct" class-=" ">         
+                    <Package :price="item.price" :title="item.title" :includes="item.includes" />
+                </div>
+            </div>
+           
+            
+            
         </section>
+        
     </div>
 </template>
 
 <script setup>
+import Package from '../UIElements/Package.vue';
+
+let pricingStruct = [
+    {price: 3, title: "Casual", includes: "4 lecciones privadas de 30 minutos cada mes"},
+    {price: 6, title: "2", includes: "blah blah"},
+    {price: 9, title: "3", includes: "he he"},
+    {price: 12, title: "4", includes: "stuffff"},
+];
+
 
 </script>
 
 <style lang="scss" scoped>
+
 
 .custom-shape-divider-top-1673808758{
     width: 100vw;
@@ -34,7 +53,7 @@
 }
 
 /** For tablet devices **/
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px)  {
     .custom-shape-divider-top-1673808758 svg {
         width: calc(145% + 1.3px);
         height: 242px;
