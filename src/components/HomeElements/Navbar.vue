@@ -19,11 +19,11 @@
             </div>
             <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
         <ul :class="showMenu ? 'flex' : 'hidden'" class="flex-col mt-8 space-y-4 xl:flex xl:space-y-0 xl:flex-row xl:items-center xl:space-x-10 xl:mt-0">
-          <li class="text-sm font-bold text-texttone hover:scale-105 hover:text-texttonehover hover:cursor-pointer">
-            Inicio
+          <li href="#" class="text-sm font-bold text-texttone hover:scale-105 hover:text-texttonehover hover:cursor-pointer">
+            <a href="#">Inicio</a> 
           </li>
-          <li class="text-sm font-bold text-texttone hover:scale-105 hover:text-slate-300 hover:cursor-pointer">
-            Sobre Nosotros
+          <li   class="text-sm font-bold text-texttone hover:scale-105 hover:text-slate-300 hover:cursor-pointer">
+            <a href="#SobreNosotros" >Sobre Nosotros</a> 
           </li>
           <li class="text-sm font-bold text-texttone hover:scale-105 hover:text-slate-300 hover:cursor-pointer">
             Calificaciones

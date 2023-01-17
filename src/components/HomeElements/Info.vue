@@ -1,5 +1,5 @@
 <template>  
-    <section class="bg-fade1 flex-wrap-reverse xl:flex-nowrap w-100 relative h-screen flex sm:flex-row justify-around items-center z-0">
+    <section id="SobreNosotros" class="bg-fade1 flex-wrap-reverse xl:flex-nowrap w-100 relative h-screen flex sm:flex-row justify-around items-center z-0">
         <div class=" flex  flex-col justify-center items-center px-6">
             <div></div>
             <h1 class="sm:text-6xl text-4xl text-texttone text-center py-2 ">Personalizado a tus <strong>Deseos</strong></h1> 
