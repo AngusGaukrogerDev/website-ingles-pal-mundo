@@ -7,7 +7,7 @@
     <section id="#Inicio" class="h-screen w-100 bg-texttonehover flex  flex-col justify-around  mx-auto z-0 relative top-0 left-0">
         <div class="md:visible"></div>
         <div class="py-8 px-4  mx-auto   text-left lg:py-16 lg:px-12">
-            <h1 class="animate__animated animate__slideInLeft  sm:text-7xl text-5xl  py-2 ">Lecciones de <strong>Inglés</strong></h1> 
+            <h1 class="animate__animated animate__slideInLeft  sm:text-7xl text-5xl  py-2 ">Lecciones de <strong class=" ">Inglés</strong></h1> 
             <h1 class="animate__animated animate__slideInLeft  sm:text-7xl text-5xl  py-2 ">Para <TransitionRoot
                 appear
             :show="isShowing"
@@ -17,7 +17,7 @@
             enter-to="opacity-100 rotate-0 scale-100"
             leave="transform duration-500 transition ease-in-out"
             leave-from="opacity-100 rotate-0 scale-100 "
-            leave-to="opacity-0 scale-95"><strong > {{ randomWord }}</strong>
+            leave-to="opacity-0 scale-95"><strong class="" > {{ randomWord }}</strong>
             </TransitionRoot></h1>
             <h2 class="sm:text-2xl text-lg  py-2 ">¡Aprende Inglés Cómo Quieras!</h2>
             <button class="shadow-2xl font-bold bg-gradient-to-r from-main to-highlight my-2 hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5">Empeza Hoy</button>

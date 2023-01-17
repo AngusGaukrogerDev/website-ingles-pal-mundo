@@ -7,7 +7,7 @@
         </div>
         <section id="Precios" class="relative h-screen w-100 flex flex-col space-y-8 justify-center z-0">
             <h1 class="text-fade1 sm:text-7xl text-5xl text-center font-bold py-2 ">Precios</h1> 
-            <div  class="w-100 h-100 text-texttone flex flex-row justify-around items-center">         
+            <div  class="w-100 h-100 text-texttone flex flex-row flex-wrap justify-around items-center">         
                 <div v-for="item in pricingStruct" class-=" ">         
                     <Package :price="item.price" :title="item.title" :includes="item.includes" />
                 </div>
