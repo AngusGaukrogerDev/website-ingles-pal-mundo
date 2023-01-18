@@ -1,6 +1,8 @@
 <template>
-    <div>
-        
+    <div class="text-texttone">
+            Inshaallah
+        <form></form>
+
     </div>
 </template>
 

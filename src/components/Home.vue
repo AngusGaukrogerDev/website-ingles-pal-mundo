@@ -1,6 +1,6 @@
 <template class=" ">
-    <Navbar />
-
+        
+        <Navbar />
         <Hero />
         <Info />
         <Book />
