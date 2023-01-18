@@ -8,12 +8,14 @@
             </svg>
         </div>
         <section id="Escribenos" class="relative bg-fade1 h-screen w-100 flex flex-row justify-center items-center z-0">
-            Contact
+            <ContactForm />
         </section>
     </div>
 </template>
 
 <script setup>
+import ContactForm from '../UIElements/ContactForm.vue';
+
 
 </script>
 
