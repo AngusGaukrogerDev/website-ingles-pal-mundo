@@ -6,8 +6,9 @@
             </svg>
         </div>
         <section id="NuestrosProfesores" class="relative h-screen w-100 flex flex-col sm:space-y-5 justify-center z-0">
-
-
+            <div>
+            
+            </div>
         </section>
     </div>
 </template>
