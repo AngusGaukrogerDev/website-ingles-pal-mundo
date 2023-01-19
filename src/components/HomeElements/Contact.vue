@@ -16,16 +16,16 @@
                     <form id="contact-form" class="flex flex-col w-1/4 space-y-4 justify-evenly "  @submit.prevent="formSubmit">
                             <div class="flex flex-col justify-start">
                                 <label  for="name">Nombre: </label>
-                                <input class=" h-8 rounded-sm text-fade1" type="text" name="name" id="name" required="" v-model="formData.name" >
+                                <input class=" h-8 rounded-sm text-fade1" type="text" name="name" id="name" required="" v-model="form.name" >
                             </div>
                             <div class="flex flex-col justify-start">
                                 <label class=" "  for="email">Correo Electronico: </label>
-                                <input class="text-fade1 h-8 rounded-sm"  type="email" name="email" id="email" required="" v-model="formData.email" >
+                                <input class="text-fade1 h-8 rounded-sm"  type="email" name="email" id="email" required="" v-model="form.email" >
                             </div>
                             <div class="flex flex-col justify-start">
                                 <label class=" " for="email">Mensaje:</label>
 
-                                <textarea class="text-fade1 h-24 rounded-sm" name="textarea" id="textarea" required="" v-model="formData.content"></textarea>
+                                <textarea class="text-fade1 h-24 rounded-sm" name="textarea" id="textarea" required="" v-model="form.content"></textarea>
 
                             </div>     
                         
@@ -45,7 +45,7 @@
     import {ref} from 'vue';
     import axios from 'axios';
 
-    let formData = {
+    let form = {
         name: '',
         email: '',
         content: '',
@@ -58,7 +58,7 @@
 
     function formSubmit()
     {
-        axios.post("https://mail.brth.uk:1234/api/v1/form/inglespalmundo", formData)
+        axios.post("https://mail.brth.uk:1234/api/v1/form/inglespalmundo", form)
         .then((res) => {
             showSuccess.value = true
         })
@@ -66,9 +66,9 @@
             showError.value = false
         })
         .finally(() => {
-            formData.name.value = ''
-            formData.email.value = ''   
-            formData.content.value = ''
+            formData.name = ''
+            formData.email = ''   
+            formData.content = ''
         });
     }
 

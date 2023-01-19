@@ -6,8 +6,11 @@
             </svg>
         </div>
         <section id="NuestrosProfesores" class="relative h-screen w-100 flex flex-col sm:space-y-5 justify-center z-0">
-            <div>
-            
+            <div class="flex flex-row justify-evenly">
+                <h1 class="sm:text-5xl text-4xl text-fade1 text-center py-2 ">image here</h1> 
+                
+                <h1 class="sm:text-5xl text-4xl text-fade1 text-center py-2 ">Profesores <strong>Profesionales</strong></h1> 
+
             </div>
         </section>
     </div>
