@@ -7,31 +7,70 @@
             <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
             </svg>
         </div>
-        <section id="Escribenos" class="relative bg-fade1 text-texttone h-screen w-100 ">
-            <form id="contact-form"   @submit.prevent="formSubmit">
-                <div class=" h-screen w-100 flex flex-col justify-evenly items-center">
-                    <div class="flex flex-row justify-evenly items-center">
-                        <label class="" for="name">Nombre: </label>
-                        <input class="border-2 m-2" type="text" name="name" id="name" required="" >
-                    </div>
-                    <div class="flex flex-row justify-evenly items-center">
-                        <label class="" for="email">Correo Electronico: </label>
-                        <input class="border-2 m-2"  type="email" name="email" id="email" required="" >
-                    </div>
-                    <div class="flex flex-row justify-evenly items-center">
-                        <label class="label" for="email">Mensaje:</label>
-                        <textarea class=" border-2 m-2" name="textarea" id="textarea" required="" ></textarea>
-                    </div>
-                    <button class="bg-gradient-to-r font-bold from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5" type="submit" value="Send Message">Envía Mensaje</button>
-                </div>
+        <section id="Escribenos" class="relative bg-fade1 text-texttone flex flex-row justify-evenly items-center h-screen w-100 ">
 
-        </form>
+                    <div>
+                        <h2 class="text-texttone  sm:text-8xl text-2xl text-center font-bold py-2 ">Escribenos</h2> 
+                        
+                    </div>
+                    <form id="contact-form" class="flex flex-col w-1/4 space-y-4 justify-evenly "  @submit.prevent="formSubmit">
+                            <div class="flex flex-col justify-start">
+                                <label  for="name">Nombre: </label>
+                                <input class=" h-8 rounded-sm text-fade1" type="text" name="name" id="name" required="" v-model="formData.name" >
+                            </div>
+                            <div class="flex flex-col justify-start">
+                                <label class=" "  for="email">Correo Electronico: </label>
+                                <input class="text-fade1 h-8 rounded-sm"  type="email" name="email" id="email" required="" v-model="formData.email" >
+                            </div>
+                            <div class="flex flex-col justify-start">
+                                <label class=" " for="email">Mensaje:</label>
+
+                                <textarea class="text-fade1 h-24 rounded-sm" name="textarea" id="textarea" required="" v-model="formData.content"></textarea>
+
+                            </div>     
+                        
+                        <div class="flex justify-center">
+                            <button class="bg-gradient-to-r w-1/2  font-bold from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5" type="submit" value="Send Message">Envía Mensaje</button>     
+                        </div>
+                        <span class="text-green-500" v-show="showSuccess">Your message has been sent!</span>
+                        <span class="text-red-500" v-show="showError">Error! Your message has not been sent!</span>
+                    </form>
+          
         </section>
     </div>
 </template>
 
 <script setup>
-import ContactForm from '../UIElements/ContactForm.vue';
+
+    import {ref} from 'vue';
+    import axios from 'axios';
+
+    let formData = {
+        name: '',
+        email: '',
+        content: '',
+        subject: 'InglésPalMundo - Contact Form',
+    }
+
+    let showSuccess = ref(false);
+    let showError = ref(false);
+
+
+    function formSubmit()
+    {
+        axios.post("https://mail.brth.uk:1234/api/v1/form/inglespalmundo", formData)
+        .then((res) => {
+            showSuccess.value = true
+        })
+        .catch((error) => {
+            showError.value = false
+        })
+        .finally(() => {
+            formData.name.value = ''
+            formData.email.value = ''   
+            formData.content.value = ''
+        });
+    }
 
 
 </script>
