@@ -7,13 +7,13 @@
             <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
             </svg>
         </div>
-        <section id="Escribenos" class="relative bg-fade1 text-texttone flex flex-row justify-evenly items-center h-screen w-100 ">
+        <section id="Escribenos" class="relative bg-fade1 text-texttone flex flex-col xl:flex-row flex-wrap xl:justify-evenly items-center h-screen w-100 ">
 
                     <div>
                         <h2 class="text-texttone  sm:text-8xl text-2xl text-center font-bold py-2 ">Escribenos</h2> 
                         
                     </div>
-                    <form id="contact-form" class="flex flex-col w-1/4 space-y-4 justify-evenly "  @submit.prevent="formSubmit">
+                    <form id="contact-form" class="flex flex-col x:w-1/4 space-y-4 justify-evenly "  @submit.prevent="formSubmit">
                             <div class="flex flex-col justify-start">
                                 <label  for="name">Nombre: </label>
                                 <input class=" h-8 rounded-sm text-fade1" type="text" name="name" id="name" required="" v-model="form.name" >
