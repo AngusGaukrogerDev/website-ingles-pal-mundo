@@ -5,7 +5,7 @@
                 <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
             </svg>
         </div>
-        <section id="LeccionesPrivadas" class="relative h-screen w-100 flex flex-col sm:space-y-5 justify-center z-0">
+        <section id="LeccionesPrivadas" class="relative h-screen w-100 flex flex-col sm:space-y-8 justify-center z-0">
             <h1 class="text-fade1 sm:text-5xl text-2xl text-center font-bold py-2 ">Lecciones Privadas</h1> 
             <h2 class="text-fade1 sm:text-3xl text-lg text-center font-bold py-2 ">Recibir tu primera leccion (30 minutos) por gratis!</h2>
             <div  class="w-100 h-100 text-texttone flex flex-row flex-wrap justify-around items-center">         
