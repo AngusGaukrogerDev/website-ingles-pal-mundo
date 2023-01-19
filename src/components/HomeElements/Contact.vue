@@ -13,7 +13,7 @@
                         <h2 class="text-texttone  sm:text-8xl text-2xl text-center font-bold py-2 ">Escribenos</h2> 
                         
                     </div>
-                    <form id="contact-form" class="flex flex-col x:w-1/4 space-y-4 justify-evenly "  @submit.prevent="formSubmit">
+                    <form id="contact-form" class="flex flex-col xl:w-1/4 space-y-4 justify-evenly "  @submit.prevent="formSubmit">
                             <div class="flex flex-col justify-start">
                                 <label  for="name">Nombre: </label>
                                 <input class=" h-8 rounded-sm text-fade1" type="text" name="name" id="name" required="" v-model="form.name" >
