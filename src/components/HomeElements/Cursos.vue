@@ -19,7 +19,7 @@
 
 <style lang="scss" scoped>
 .custom-shape-divider-bottom-1673808758{
-    width: 100vw;
+    width: 100%;
     overflow: hidden;
     transform: rotate(180deg);
 }
