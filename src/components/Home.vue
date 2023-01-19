@@ -3,7 +3,9 @@
         <Navbar />
         <Hero />
         <Info />
-        <Book />
+        <NuestrosProfesores />
+        <Cursos />
+        <LeccionesPrivadas />
         <Contact />
         <Footer />
 
@@ -15,7 +17,9 @@
     import Navbar from './HomeElements/Navbar.vue';
     import Hero from './HomeElements/Hero.vue';
     import Info from './HomeElements/Info.vue';
-    import Book from './HomeElements/Book.vue';
+    import LeccionesPrivadas from './HomeElements/LeccionesPrivadas.vue';
+    import NuestrosProfesores from './HomeElements/NuestrosProfesores.vue';
+    import Cursos from './HomeElements/Cursos.vue';
     import Contact from './HomeElements/Contact.vue';
     import Footer from './HomeElements/Footer.vue';
 

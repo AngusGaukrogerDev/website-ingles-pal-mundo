@@ -1,0 +1,45 @@
+<template>
+    <div>
+        <div class="custom-shape-divider-top-1673798750">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <section id="NuestrosProfesores" class="relative h-screen w-100 flex flex-col sm:space-y-5 justify-center z-0">
+
+
+        </section>
+    </div>
+</template>
+
+<script setup>
+
+</script>
+
+<style lang="scss" scoped>
+.custom-shape-divider-top-1673798750 {
+   
+    width: 100%;
+    overflow: hidden;
+    transform: rotate(180deg);
+}
+
+.custom-shape-divider-top-1673798750 svg {
+    position: relative;
+   
+    width: 138%;
+    height: 190px;
+}
+
+.custom-shape-divider-top-1673798750 .shape-fill {
+    fill: #222626;
+}
+
+/** For tablet devices **/
+@media (min-width: 768px) {
+    .custom-shape-divider-top-1673798750 svg {
+        width: 138%;
+        height: 215px;
+    }
+}
+</style>
