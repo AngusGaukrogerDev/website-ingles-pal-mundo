@@ -7,8 +7,25 @@
             <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
             </svg>
         </div>
-        <section id="Escribenos" class="relative bg-fade1 h-screen w-100 flex flex-row justify-center items-center z-0">
-            <ContactForm />
+        <section id="Escribenos" class="relative bg-fade1 text-texttone h-screen w-100 ">
+            <form id="contact-form"   @submit.prevent="formSubmit">
+                <div class=" h-screen w-100 flex flex-col justify-evenly items-center">
+                    <div class="flex flex-row justify-evenly items-center">
+                        <label class="" for="name">Nombre: </label>
+                        <input class="border-2 m-2" type="text" name="name" id="name" required="" >
+                    </div>
+                    <div class="flex flex-row justify-evenly items-center">
+                        <label class="" for="email">Correo Electronico: </label>
+                        <input class="border-2 m-2"  type="email" name="email" id="email" required="" >
+                    </div>
+                    <div class="flex flex-row justify-evenly items-center">
+                        <label class="label" for="email">Mensaje:</label>
+                        <textarea class=" border-2 m-2" name="textarea" id="textarea" required="" ></textarea>
+                    </div>
+                    <button class="bg-gradient-to-r font-bold from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5" type="submit" value="Send Message">Envía Mensaje</button>
+                </div>
+
+        </form>
         </section>
     </div>
 </template>
