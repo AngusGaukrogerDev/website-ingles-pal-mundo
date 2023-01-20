@@ -37,11 +37,11 @@
                                 @error="handleError"
                             ></VueRecaptcha> -->
                             <button v-show="captchaSuccess" class="bg-gradient-to-r w-1/2  font-bold from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5" type="submit" value="Send Message">Envía Mensaje</button>     
-                            <span  v-show="captchaError" class="text-red-500">Error! Failed!</span>
+                            <span  v-show="captchaError" class="text-red-500 flex justify-center">Error! No se funciona 😫!</span>
                             
                         </div>
-                        <span class="text-green-500" v-show="showSuccess">Your message has been sent!</span>
-                        <span class="text-red-500" v-show="showError">Error! Your message has not been sent!</span>
+                        <span class="text-green-500 flex justify-center" v-show="showSuccess">Enviaste un mensaje 👍!</span>
+                        <span class="text-red-500 flex justify-center" v-show="showError">Error! No se funciona 😫!</span>
                     </form>
           
         </section>
