@@ -63,7 +63,7 @@
     let showSuccess = ref(false);
     let showError = ref(false);
 
-    let siteKey = '6Lc4HBIkAAAAAOM7u41BI0zlrreYpwQCEpktDwZh';
+    let siteKey = '';
     let captchaSuccess = ref(true);
     let captchaError = ref(false);
 
