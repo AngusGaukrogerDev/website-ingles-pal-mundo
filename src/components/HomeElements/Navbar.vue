@@ -3,9 +3,13 @@
         <nav class="container px-5 py-6 mx-auto xl:flex xl:justify-between xl:items-center aos-item " data-aos="fade-left">
             <div class="flex items-center justify-between">
                 <!-- Link Logo to Main Page -->
-                <router-link to="/" class="  ">
-                   <h1 class="font-bold text-2xl text-texttone text-transparent bg-clip-text bg-gradient-to-r from-main to-highlight">InglésPalMundo</h1>
-                </router-link>
+
+                <h1 class="font-bold text-2xl text-texttone text-transparent bg-clip-text bg-gradient-to-r from-main to-highlight">
+                  <a href="#" >
+                    InglésPalMundo
+                  </a>
+                </h1>
+
                 <!-- Mobile menu button -->
                 <div @click="showMenu = !showMenu" class="flex xl:hidden">
                     <button type="button" class="text-texttone hover:text-texttonehover focus:outline-none focus:text-texttonehover">

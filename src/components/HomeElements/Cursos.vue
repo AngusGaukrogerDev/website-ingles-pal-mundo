@@ -27,7 +27,7 @@
 .custom-shape-divider-bottom-1673808758 svg {
     // position: relative;
     // display: block;
-    width: calc(145% + 1.3px);
+    width: 145%;
     height: 129px;
 }
 

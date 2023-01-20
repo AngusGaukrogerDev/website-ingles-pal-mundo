@@ -7,7 +7,7 @@
         </div>
         <section id="NuestrosProfesores" class="relative px-8 h-screen w-100 flex flex-col sm:space-y-5 justify-center z-0">
             <div class="flex flex-row justify-evenly">
-                <div class="block">
+                <div class="hidden md:block aos-item" data-aos="fade-right">
                     <div class="bg-gradient-to-r rounded-lg from-main to-highlight p-2 scale-50 md:scale-75">
                         <img class="object-contain  rounded-lg  " src="../../assets/teacher.jpg" />
                     
@@ -15,10 +15,12 @@
                 
                 </div>
                 
-                <div class=" flex flex-col justify-evenly">
-                    <h1 class="sm:text-5xl text-4xl text-fade1 text-center py-2 ">Profesores <strong>Profesionales</strong></h1> 
+                <div class=" flex flex-col justify-center">
+                    <h1 class="sm:text-5xl text-4xl text-fade1 text-center py-2  aos-item" data-aos="fade-left">Profesores <strong>Profesionales</strong></h1> 
                 
-                    <h2 class="sm:text-xl text-lg text-fade1 py-2 text-center sm:mt-3">Ofrecemos clases privadas o en grupos en línea para <strong>inglés general, inglés para ingenieros</strong> y <strong>inglés para negocios</strong>. </h2>
+                    <h2 class="sm:text-xl text-lg text-fade1 py-2 text-center sm:mt-3 aos-item" data-aos="fade-up">Todos nuestros profesores tienen calificaciones para enseñar inglés.</h2>
+                    <h2 class="sm:text-xl text-lg text-fade1 py-2 text-center sm:mt-3 aos-item" data-aos="fade-up">Con muchas actividades, tópicos y ejercicios aprenderás inglés en una manera divertida y practical. </h2>
+                    <h2 class="sm:text-xl text-lg text-fade1 py-2 text-center sm:mt-3 aos-item" data-aos="fade-up">Las lecciones de InglésPalMundo son completamente en línea, entonces puedes tener una leccion con un profesor en casa. Que cómodo!</h2>
                     
                 </div>
 

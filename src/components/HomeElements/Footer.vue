@@ -1,5 +1,5 @@
-<template>
-    <footer class="bg-fade1 w-100  bottom-0 text-texttone">
+<template >
+    <footer class="bg-fade1 w-100  bottom-0 text-texttone ">
         <div class=" px-1 py-6 mx-auto justify-between  md:flex-row flex md:justify-around items-center">
             <h2>&copy InglésPalMundo - 2023</h2>
 

@@ -10,19 +10,19 @@
         <section id="Escribenos" class="relative bg-fade1 text-texttone flex flex-col xl:flex-row flex-wrap xl:justify-evenly items-center h-screen w-100 ">
 
                     <div>
-                        <h2 class="text-texttone  sm:text-8xl text-2xl text-center font-bold py-2 ">Escribenos</h2> 
+                        <h2 class="text-texttone  sm:text-8xl text-2xl text-center font-bold py-2 aos-item" data-aos="fade-right">Escribenos</h2> 
                         
                     </div>
                     <form id="contact-form" class="flex flex-col xl:w-1/4 space-y-4 justify-evenly "  @submit.prevent="formSubmit">
-                            <div class="flex flex-col justify-start">
+                            <div class="flex flex-col justify-start aos-item" data-aos="fade-left">
                                 <label  for="name">Nombre: </label>
                                 <input class=" h-8 rounded-sm text-fade1" type="text" name="name" id="name" required="" v-model="form.name" >
                             </div>
-                            <div class="flex flex-col justify-start">
+                            <div class="flex flex-col justify-start aos-item" data-aos="fade-left">
                                 <label class=" "  for="email">Correo Electronico: </label>
                                 <input class="text-fade1 h-8 rounded-sm"  type="email" name="email" id="email" required="" v-model="form.email" >
                             </div>
-                            <div class="flex flex-col justify-start">
+                            <div class="flex flex-col justify-start aos-item" data-aos="fade-left">
                                 <label class=" " for="email">Mensaje:</label>
 
                                 <textarea class="text-fade1 h-24 rounded-sm" name="textarea" id="textarea" required="" v-model="form.content"></textarea>
@@ -36,7 +36,7 @@
                                 @verify="handleSuccess"
                                 @error="handleError"
                             ></VueRecaptcha> -->
-                            <button v-show="captchaSuccess" class="bg-gradient-to-r w-1/2  font-bold from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5" type="submit" value="Send Message">Envía Mensaje</button>     
+                            <button v-show="captchaSuccess" class="bg-gradient-to-r w-1/2  font-bold from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 aos-item" data-aos="fade-left" type="submit" value="Send Message">Envía Mensaje</button>     
                             <span  v-show="captchaError" class="text-red-500 flex justify-center">Error! No se funciona 😫!</span>
                             
                         </div>
