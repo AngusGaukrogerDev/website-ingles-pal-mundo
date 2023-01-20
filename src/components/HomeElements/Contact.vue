@@ -30,7 +30,15 @@
                             </div>     
                         
                         <div class="flex justify-center">
-                            <button class="bg-gradient-to-r w-1/2  font-bold from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5" type="submit" value="Send Message">Envía Mensaje</button>     
+                            <!-- <VueRecaptcha
+                                :sitekey="siteKey"
+                                :load-recaptcha-script="true"
+                                @verify="handleSuccess"
+                                @error="handleError"
+                            ></VueRecaptcha> -->
+                            <button v-show="captchaSuccess" class="bg-gradient-to-r w-1/2  font-bold from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5" type="submit" value="Send Message">Envía Mensaje</button>     
+                            <span  v-show="captchaError" class="text-red-500">Error! Failed!</span>
+                            
                         </div>
                         <span class="text-green-500" v-show="showSuccess">Your message has been sent!</span>
                         <span class="text-red-500" v-show="showError">Error! Your message has not been sent!</span>
@@ -44,7 +52,7 @@
 
     import {ref} from 'vue';
     import axios from 'axios';
-
+    import { VueRecaptcha } from 'vue-recaptcha';
     let form = {
         name: '',
         email: '',
@@ -55,6 +63,9 @@
     let showSuccess = ref(false);
     let showError = ref(false);
 
+    let siteKey = '6Lc4HBIkAAAAAOM7u41BI0zlrreYpwQCEpktDwZh';
+    let captchaSuccess = ref(true);
+    let captchaError = ref(false);
 
     function formSubmit()
     {
@@ -66,13 +77,20 @@
             showError.value = false
         })
         .finally(() => {
-            formData.name = ''
-            formData.email = ''   
-            formData.content = ''
+            form.name = ''
+            form.email = ''   
+            form.content = ''
         });
     }
 
-
+    function handleSuccess()
+    {
+        captchaSuccess.value = true;
+    }
+    function handleError()
+    {
+        captchaError.value = true;
+    }
 </script>
 
 <style lang="scss" scoped>
