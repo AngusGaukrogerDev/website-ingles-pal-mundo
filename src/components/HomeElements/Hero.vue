@@ -19,7 +19,7 @@
             leave-from="opacity-100 rotate-0 scale-100 "
             leave-to="opacity-0 scale-95"><strong class="" > {{ randomWord }}</strong>
             </TransitionRoot></h1>
-            <h2 class="sm:text-2xl text-lg  py-2 aos-item " data-aos="fade-right">¡Aprende Inglés Cómo Quieras!</h2>
+            <h2 class="sm:text-2xl text-lg  py-2 aos-item " data-aos="fade-right">¡Aprende Inglés Como Quieras!</h2>
             <button class="shadow-2xl font-bold bg-gradient-to-r from-main to-highlight my-2 hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 aos-item " data-aos-anchor-placement="center-bottom"  data-aos="fade-right">Empeza Hoy</button>
         </div>
         
