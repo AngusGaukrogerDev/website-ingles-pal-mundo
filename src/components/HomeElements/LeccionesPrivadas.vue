@@ -7,13 +7,13 @@
         </div>
         <section id="LeccionesPrivadas" class="relative h-screen w-100 flex flex-col sm:space-y-8 justify-center z-0">
             <h1 class="text-fade1 sm:text-5xl text-2xl text-center font-bold py-2 ">Lecciones Privadas</h1> 
-            <h2 class="text-fade1 sm:text-3xl text-lg text-center font-bold py-2 ">Compra un plan hoy y recibir tu primera leccion (30 minutos) por totalmente gratis!</h2>
+            <h2 class="text-fade1 sm:text-3xl text-lg text-center font-bold py-2 ">Compra un Plan Hoy y Recibir tu Primera Leccion (30 Minutos) <strong>Totalmente Gratis</strong>!</h2>
             <div  class="w-100 h-100 text-texttone flex flex-row flex-wrap justify-around items-center">         
                 <div v-for="item in pricingStruct" class-=" ">         
                     <Package :price="item.price" :title="item.title" :includes="item.includes" />
                 </div>
             </div>
-            <h2 class="text-fade1 sm:text-xl text-lg text-center font-bold py-2 ">Lecciones privadas individuales cuestan $18 por hora.</h2>
+            <h2 class="text-fade1 sm:text-xl text-lg text-center font-bold py-2 ">Lecciones Privadas Individuales Cuestan $18 Por Hora.</h2>
            
             
             

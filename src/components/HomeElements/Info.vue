@@ -11,7 +11,7 @@
         </div>
 
         <div class="hidden sm:flex">
-            <img class="hidden sm:flex rounded-lg border-4 sm:border-8 border-texttone scale-50 md:scale-75" src="../../assets/videocall.jpg" />
+            <img class=" object-contain  rounded-lg border-4 sm:border-8 border-texttone scale-50 md:scale-75" src="../../assets/videocall.jpg" />
         </div>
         
     </section>
