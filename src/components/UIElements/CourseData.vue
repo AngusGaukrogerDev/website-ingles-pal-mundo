@@ -1,6 +1,6 @@
 <template>
     <div class=" aos-item" data-aos="fade-up">
-        <div class="hover:scale-105 text-texttone  text-center flex flex-col justify-evenly items-center border-4 border-texttone bg-fade1 p-3 xl:py-1  xxl:space-y-3 rounded-lg  hover:cursor-pointer">
+        <div class="hover:scale-105 text-texttone  text-center flex flex-col xl:py-5 justify-evenly items-center border-4 border-texttone bg-fade1 p-3  xxl:space-y-3 rounded-lg  hover:cursor-pointer">
             
                 <div class=" xl:py-1 flex flex-col items-center justify-center">
                     <h1 class="text-lg xl:text-4xl">${{ priceTot }} </h1>
