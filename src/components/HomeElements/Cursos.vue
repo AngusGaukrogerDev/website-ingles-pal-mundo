@@ -5,8 +5,14 @@
                 <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
             </svg>
         </div>
-        <section id="Cursos" class="relative bg-fade1 h-screen w-100 flex flex-col sm:space-y-5 justify-center z-0">
-
+        <section id="Cursos" class="relative bg-fade1 px-20 space-y-4 h-screen w-100 flex flex-col justify-evenly z-0">
+            <h1 class="sm:text-5xl text-4xl text-texttone text-center py-2 aos-item" data-aos="fade-right">Cursos de Grupos</h1> 
+            
+            <div class=" h-2/3 grid grid-cols-2 grid-rows-2 gap-8 content-around justify-between   text-texttone">
+                <div class=" h-2/3" v-for="item in CourseDetails">
+                    <CourseData :name="item.name" :price-tot="item.priceTot" :price-weekly="item.priceWeekly" :duration="item.duration" :details="item.details"/>
+                </div>
+            </div>
 
         </section>
         
@@ -14,6 +20,18 @@
 </template>
 
 <script setup>
+    import CourseData from '../UIElements/CourseData.vue';
+
+    let CourseDetails = [
+        {name: "Nivel 1: Principiante", priceTot: 36, priceWeekly:4,  duration: 9, details: "El curso perfecto para cualquier estudiante nuevo."},
+        {name: "Nivel 2: Pre-Elementario", priceTot: 40, priceWeekly:4,  duration: 10, details: "El curso perfecto para cualquier estudiante nuevo."},
+        {name: "Nivel 3: Elementario", priceTot: 44, priceWeekly:4,  duration: 11, details: "El curso perfecto para cualquier estudiante nuevo."},
+        {name: "Nivel 4: Pre-Intermedio", priceTot: 56, priceWeekly:4,  duration: 14, details: "El curso perfecto para cualquier estudiante nuevo."},
+        {name: "Nivel 5: Intermedio ", priceTot: 52, priceWeekly:4,  duration: 13, details: "El curso perfecto para cualquier estudiante nuevo."},
+        {name: "Nivel 6: Pre-Avanzado ", priceTot: 40, priceWeekly:4,  duration: 10, details: "El curso perfecto para cualquier estudiante nuevo."},
+        // {name: "Nivel 6: Avanzado ", priceTot: 24, priceWeekly:4,  duration: 6, details: "El curso perfecto para cualquier estudiante nuevo."},
+        // {name: "Nivel 7: Competente ", priceTot: 24, priceWeekly:4,  duration: 6, details: "El curso perfecto para cualquier estudiante nuevo."},
+    ];
 
 </script>
 
@@ -38,7 +56,7 @@
 /** For tablet devices **/
 @media (min-width: 768px)  {
     .custom-shape-divider-bottom-1673808758 svg {
-        width: calc(145% + 1.3px);
+        width: 145%;
         height: 242px;
     }
 }
