@@ -39,14 +39,15 @@ let pricingStruct = [
 
 
 .custom-shape-divider-top-1673808758{
-    width: 100vw;
+    width: 100%;
+
     overflow: hidden;
 }
 
 .custom-shape-divider-top-1673808758 svg {
     // position: relative;
     // display: block;
-    width: calc(145% + 1.3px);
+    width: 145%;
     height: 129px;
 }
 
@@ -57,7 +58,7 @@ let pricingStruct = [
 /** For tablet devices **/
 @media (min-width: 768px)  {
     .custom-shape-divider-top-1673808758 svg {
-        width: calc(145% + 1.3px);
+        width: 145%;
         height: 242px;
     }
 }

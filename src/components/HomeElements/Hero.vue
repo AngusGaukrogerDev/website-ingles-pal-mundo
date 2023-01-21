@@ -89,7 +89,7 @@
 .custom-shape-divider-bottom-1673798205 svg {
     position: relative;
     display: block;
-    width: calc(138% + 1.3px);
+    width: 138%;
     height: 160px;
 }
 
@@ -120,7 +120,7 @@
 /** For tablet devices **/
 @media (min-width: 768px) {
     .custom-shape-divider-top-1673798750 svg {
-        width: calc(138% + 1.3px);
+        width: 138%;
         height: 215px;
     }
 }
