@@ -5,11 +5,13 @@
                 <path d="M1200,0H0V120H281.94C572.9,116.24,602.45,3.86,602.45,3.86h0S632,116.24,923,120h277Z" class="shape-fill"></path>
             </svg>
         </div>
-        <section id="Cursos" class="relative bg-fade1 px-20 space-y-4 h-screen w-100 flex flex-col justify-evenly z-0">
-            <h1 class="sm:text-5xl text-4xl text-texttone text-center py-2 aos-item" data-aos="fade-right">Cursos de Grupos</h1> 
+        <section id="Cursos" class="relative bg-fade1 px-5 md:px-20 h-screen w-100 sm:space-y-8 flex flex-col justify-center z-0">
+            <h1 class="sm:text-5xl text-2xl text-texttone text-center font-bold aos-item" data-aos="fade-right">Cursos de Grupos</h1> 
+            <h2 class="sm:text-xl text-md text-texttone text-center aos-item" data-aos="fade-up">Creemos que el inglés debería ser para todos. Por eso todos nuestros clases de grupo cuestan no más que 4$ por hora! </h2>
+            <!-- <h2 class="sm:text-2xl text-xl text-texttone text-center aos-item" data-aos="fade-up"> </h2> -->
             
-            <div class=" h-2/3 grid grid-cols-2 grid-rows-2 gap-8 content-around justify-between   text-texttone">
-                <div class=" h-2/3" v-for="item in CourseDetails">
+            <div class="  grid grid-rows-3 grid-cols-2 gap-2 md:grid-cols-3 md:grid-rows-2 md:gap-6 content-around justify-between   text-texttone">
+                <div v-for="item in CourseDetails">
                     <CourseData :name="item.name" :price-tot="item.priceTot" :price-weekly="item.priceWeekly" :duration="item.duration" :details="item.details"/>
                 </div>
             </div>

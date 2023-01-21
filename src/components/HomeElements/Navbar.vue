@@ -1,5 +1,5 @@
 <template>
-    <header class="bg-fade1 w-full fixed top-0 z-50 overflow-hidden ">       
+    <header class="bg-fade1 w-screen fixed top-0 z-50 overflow-hidden ">       
         <nav class="container px-5 py-6 mx-auto xl:flex xl:justify-between xl:items-center aos-item " data-aos="fade-left">
             <div class="flex items-center justify-between">
                 <!-- Link Logo to Main Page -->
@@ -43,9 +43,9 @@
                 <a href="#Escribenos" >Escribenos</a> 
 
               </li>
-              <button class="bg-gradient-to-r from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 ">
+              <!-- <button class="bg-gradient-to-r from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 ">
                 <strong>¡Reserva tu Leccion Ahora!</strong> 
-            </button>
+            </button> -->
             </ul>
         
         </nav>
