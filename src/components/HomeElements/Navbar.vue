@@ -1,6 +1,6 @@
 <template>
     <header class="bg-fade1 w-full fixed top-0 z-50 overflow-hidden ">       
-        <nav class="container px-5 py-6 mx-auto xl:flex xl:justify-between xl:items-center aos-item " data-aos="fade-left">
+        <nav class="container px-5 py-6 mx-auto xl:flex xl:justify-between xl:items-center">
             <div class="flex items-center justify-between">
                 <!-- Link Logo to Main Page -->
 
