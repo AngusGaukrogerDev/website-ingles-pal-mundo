@@ -2,7 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html{
+  overflow-x: hidden;
+}
 .body{
+  
+
   /* https://goodpalette.io/259ef5-dd0ef0-b0b5b8 */
   /* Primary: Button Blue */
   --primary-100: #F2F7FF;

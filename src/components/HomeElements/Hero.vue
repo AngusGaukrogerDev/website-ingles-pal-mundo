@@ -5,7 +5,6 @@
         </svg>
     </div>
     <section id="#Inicio" class=" h-screen w-full bg-texttonehover flex  flex-col justify-around  mx-auto z-0 relative top-0 left-0">
-        <div class="md:visible"></div>
         <div class="py-8 px-4  mx-auto   text-left lg:py-16 lg:px-12">
             <h1 class="aos-item sm:text-7xl text-5xl  py-2 " data-aos="fade-right">Lecciones de <strong class=" ">Inglés</strong></h1> 
             <h1 class="aos-item sm:text-7xl text-5xl  py-2 " data-aos="fade-right">Para <TransitionRoot
