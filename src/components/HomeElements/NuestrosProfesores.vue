@@ -18,9 +18,13 @@
                 <div class=" flex flex-col justify-center">
                     <h1 class="sm:text-5xl text-4xl text-fade1 text-center py-2  aos-item" data-aos="fade-left">Profesores <strong>Profesionales</strong></h1> 
                 
-                    <h2 class="sm:text-xl text-lg text-fade1 py-2 text-center sm:mt-3 aos-item" data-aos="fade-up">Todos nuestros profesores tienen certificadas para enseñar inglés.</h2>
-                    <h2 class="sm:text-xl text-lg text-fade1 py-2 text-center sm:mt-3 aos-item" data-aos="fade-up">Con muchas actividades, temas y ejercicios aprenderás inglés en una manera divertida y practical. </h2>
-                    <h2 class="sm:text-xl text-lg text-fade1 py-2 text-center sm:mt-3 aos-item" data-aos="fade-up">Las lecciones de InglésPalMundo son completamente en línea, entonces puedes tener una leccion con un profesor en casa. Que cómodo!</h2>
+                    <h2 class="sm:text-xl text-lg text-fade1 py-2 text-center sm:mt-3 aos-item" data-aos="fade-up">Contamos con profesores certificados en la enseñanza de inglés, ellos buscarán que
+                        aprendas de una manera <strong>divertida</strong> y <strong>práctica</strong> empleando distintas dinámicas que <strong>atrapen tu
+                        interés</strong>.
+                        </h2>
+                    <h2 class="sm:text-xl text-lg text-fade1 py-2 text-center sm:mt-3 aos-item" data-aos="fade-up">Las clases de InglésPalMundo son completamente en línea, de esta manera podrás
+                        aprender de un profesor nativo desde la tranquilidad de tu hogar <strong>¡Qué cómodo!</strong> 
+                        </h2>
                     
                 </div>
 

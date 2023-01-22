@@ -6,7 +6,7 @@
     </div>
     <section id="#Inicio" class=" h-screen w-full bg-texttonehover flex  flex-col justify-around  mx-auto z-0 relative top-0 left-0">
         <div class="py-8 px-4  mx-auto   text-left lg:py-16 lg:px-12">
-            <h1 class="aos-item sm:text-7xl text-5xl  py-2 " data-aos="fade-right">Lecciones de <strong class=" ">Inglés</strong></h1> 
+            <h1 class="aos-item sm:text-7xl text-5xl  py-2 " data-aos="fade-right">Clases de <strong class=" ">Inglés</strong></h1> 
             <h1 class="aos-item sm:text-7xl text-5xl  py-2 " data-aos="fade-right">Para <TransitionRoot
                 appear
             :show="isShowing"
@@ -18,13 +18,10 @@
             leave-from="opacity-100 rotate-0 scale-100 "
             leave-to="opacity-0 scale-95"><strong class="" > {{ randomWord }}</strong>
             </TransitionRoot></h1>
-            <h2 class="sm:text-2xl text-lg  py-2 aos-item " data-aos="fade-right">¡Aprende Inglés Como Quieras!</h2>
+            <h2 class="sm:text-2xl text-lg  py-2 aos-item " data-aos="fade-right">¡Aprende Inglés Cuándo Quieras!</h2>
             <div class="flex flex-row justify-start space-x-8">
                 <div class="aos-item " data-aos-anchor-placement="center-bottom"  data-aos="fade-right">
-                    <button class="shadow-2xl font-bold bg-gradient-to-r from-main to-highlight my-2 hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5"><a href="#Cursos">Nuestros Cursos</a> </button>                
-                </div>
-                <div class="aos-item " data-aos-anchor-placement="center-bottom"  data-aos="fade-right">
-                    <button class="shadow-2xl font-bold bg-gradient-to-r from-main to-highlight my-2 hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 "><a href="#LeccionesPrivadas">Lecciones Privadas</a></button>                
+                    <button class="shadow-2xl font-bold bg-gradient-to-r from-main to-highlight my-2 hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5"><a href="#Programas">Nuestros Programas</a> </button>                
                 </div>
 
             </div>
