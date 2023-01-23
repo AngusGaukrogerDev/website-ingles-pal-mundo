@@ -2,10 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
-html{
- 
-  overflow-x: hidden; 
-  /* width: 90vw; */
+/*ONLY UNCOMMENT TO DEBUG CSS*/
+/* * {
+  background: #000 !important;
+  color: #0f0 !important;
+  outline: solid #f00 1px !important;
+} */
+
+
+/* COMPLETELY BREAKS WITHOUT THIS*/
+html,body
+{
+    width: 100%;
+    overflow-x: hidden; 
 }
 .body{
   

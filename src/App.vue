@@ -3,7 +3,7 @@
 // Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
 </script>
 
-<template class="overflow-x-hidden">
+<template class="">
   <router-view />
 </template>
 
