@@ -10,7 +10,7 @@
             <h2 class="text-fade1 sm:text-3xl text-md text-center md:py-2 aos-item" data-aos="fade-right">Compra un paquete hoy y recibirás tu primera clase de 30 minutos <strong>totalmente gratis!</strong> </h2>
             <div  class="w-full h-100 text-texttone flex flex-row flex-wrap justify-around items-center">         
                 <div  v-for="item in pricingStruct" class-=" ">         
-                    <Package  :price="item.price" :title="item.title" :includes="item.includes" />
+                    <Package :currency="store.state.region_prices.prices.symbol" :price="item.price" :title="item.title" :includes="item.includes" />
                 </div>
             </div>
             <h2 class="text-fade1 sm:text-xl text-md text-center font-bold py-2 aos-item" data-aos="fade-left">Clases individuales cuestan $18 por hora.</h2>
@@ -25,11 +25,16 @@
 <script setup>
 import Package from '../UIElements/Package.vue';
 
+import {computed} from 'vue';
+import {useStore} from 'vuex';
+
+const store = useStore();
+
 let pricingStruct = [
-    {price: 32, title: "Casual", includes: "2 horas de lecciones privadas cada mes"},
-    {price: 64, title: "Normal", includes: "4 horas de lecciones privadas cada mes"},
-    {price: 96, title: "Dedicado", includes: "6 horas de lecciones privadas cada mes"},
-    {price: 128, title: "Intenso", includes: "8 horas de lecciones privadas cada mes"},
+    {price: store.state.region_prices.prices.two_hr_private, title: "Casual", includes: "2 horas de lecciones privadas cada mes"},
+    {price: store.state.region_prices.prices.four_hr_private, title: "Normal", includes: "4 horas de lecciones privadas cada mes"},
+    {price: store.state.region_prices.prices.six_hr_private, title: "Dedicado", includes: "6 horas de lecciones privadas cada mes"},
+    {price: store.state.region_prices.prices.eight_hr_private, title: "Intenso", includes: "8 horas de lecciones privadas cada mes"},
 ];
 
 
