@@ -27,23 +27,19 @@
 
 <script setup>
 import Package from '../UIElements/Package.vue';
-
-import {onMounted} from 'vue';
 import {useStore} from 'vuex';
 
 const store = useStore();
 let titles = ["Casual", "Normal", "Dedicado", "Intenso"];
 let includes = ["2 horas de lecciones privadas cada mes", "4 horas de lecciones privadas cada mes", "6 horas de lecciones privadas cada mes", "8 horas de lecciones privadas cada mes"]
-let pricingStruct = [
-    {price: store.state.region_prices.prices.two_hr_private, title: "Casual", includes: "2 horas de lecciones privadas cada mes"},
-    {price: store.state.region_prices.prices.four_hr_private, title: "Normal", includes: "4 horas de lecciones privadas cada mes"},
-    {price: store.state.region_prices.prices.six_hr_private, title: "Dedicado", includes: "6 horas de lecciones privadas cada mes"},
-    {price: store.state.region_prices.prices.eight_hr_private, title: "Intenso", includes: "8 horas de lecciones privadas cada mes"},
-];
+// let pricingStruct = [
+//     {price: store.state.region_prices.prices.two_hr_private, title: "Casual", includes: "2 horas de lecciones privadas cada mes"},
+//     {price: store.state.region_prices.prices.four_hr_private, title: "Normal", includes: "4 horas de lecciones privadas cada mes"},
+//     {price: store.state.region_prices.prices.six_hr_private, title: "Dedicado", includes: "6 horas de lecciones privadas cada mes"},
+//     {price: store.state.region_prices.prices.eight_hr_private, title: "Intenso", includes: "8 horas de lecciones privadas cada mes"},
+// ];
 
-onMounted(() => {
-   
-})
+
 
 
 
