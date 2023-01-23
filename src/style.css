@@ -11,7 +11,7 @@
 
 
 /* COMPLETELY BREAKS WITHOUT THIS*/
-html,body
+html, body
 {
     width: 100%;
     overflow-x: hidden; 

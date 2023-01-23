@@ -5,8 +5,8 @@
             <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
         </svg>
     </div>
-    <section id="#Inicio" class=" h-screen w-full bg-texttonehover flex  flex-col justify-around  mx-auto z-0 relative top-0 left-0">
-        <div class="py-8 px-4  mx-auto   text-left lg:py-16 lg:px-12">
+    <section id="#Inicio" class=" h-screen w-full bg-texttonehover flex  flex-col justify-center  mx-auto z-0 relative top-0 left-0">
+        <div class="py-8 px-4  mx-auto   text-left  lg:px-12">
             <h1 class="aos-item sm:text-7xl text-5xl  py-2 " data-aos="fade-right">Clases de <strong class=" ">Inglés</strong></h1> 
             <h1 class="aos-item sm:text-7xl text-5xl  py-2 " data-aos="fade-right">Para <TransitionRoot
                 appear
@@ -19,7 +19,7 @@
             leave-from="opacity-100 rotate-0 scale-100 "
             leave-to="opacity-0 scale-95"><strong class="" > {{ randomWord }}</strong>
             </TransitionRoot></h1>
-            <h2 class="sm:text-2xl text-lg  py-2 aos-item " data-aos="fade-right">¡Aprende Inglés Cuándo Quieras!</h2>
+            <h2 class="sm:text-2xl text-lg  py-2 aos-item " data-aos-anchor-placement="center-bottom"  data-aos="fade-right">¡Aprende Inglés Cuándo Quieras!</h2>
             <div class="flex flex-row justify-start space-x-8">
                 <div class="aos-item " data-aos-anchor-placement="center-bottom"  data-aos="fade-right">
                     <button class="shadow-2xl font-bold bg-gradient-to-r from-main to-highlight my-2 hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5"><a href="#Programas">Nuestros Programas</a> </button>                
@@ -85,10 +85,10 @@
 }
 
 .custom-shape-divider-top-1673798750 {
-    // position: absolute;
-    // top: 0;
+     position: absolute;
+     top: 0;
     // left: 0;
-    // width: 100%;
+    width: 100%;
     overflow: hidden;
     line-height: 0;
     transform: rotate(180deg);
