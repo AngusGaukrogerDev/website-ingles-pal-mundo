@@ -9,33 +9,42 @@
             <h1 class="text-fade1 sm:text-5xl text-2xl text-center font-bold md:py-2  aos-item" data-aos="fade-left">Clases Privadas</h1> 
             <h2 class="text-fade1 sm:text-3xl text-md text-center md:py-2 aos-item" data-aos="fade-right">Compra un paquete hoy y recibirás tu primera clase de 30 minutos <strong>totalmente gratis!</strong> </h2>
             <div  class="w-full h-100 text-texttone flex flex-row flex-wrap justify-around items-center">         
-                <div  v-for="item in pricingStruct" class-=" ">         
-                    <Package :currency="store.state.region_prices.prices.symbol" :price="item.price" :title="item.title" :includes="item.includes" />
-                </div>
+                 
+                    <Package :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.two_hr_private" :title="titles[0]" :includes="includes[0]" />
+                    <Package :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.four_hr_private" :title="titles[1]" :includes="includes[1]" />
+                    <Package :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.six_hr_private" :title="titles[2]" :includes="includes[2]" />
+                    <Package :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.eight_hr_private" :title="titles[3]" :includes="includes[3]" />
+             
             </div>
-            <h2 class="text-fade1 sm:text-xl text-md text-center font-bold py-2 aos-item" data-aos="fade-left">Clases individuales cuestan $18 por hora.</h2>
+            <h2 class="text-fade1 sm:text-xl text-md text-center font-bold py-2 aos-item" data-aos="fade-left">Clases individuales cuestan {{store.state.region_prices.prices.symbol}}{{ store.state.region_prices.prices.one_hr_private }} por hora.</h2>
            
             
             
         </section>
         
     </div>
-</template>
+</template> 
 
 <script setup>
 import Package from '../UIElements/Package.vue';
 
-import {computed} from 'vue';
+import {onMounted} from 'vue';
 import {useStore} from 'vuex';
 
 const store = useStore();
-
+let titles = ["Casual", "Normal", "Dedicado", "Intenso"];
+let includes = ["2 horas de lecciones privadas cada mes", "4 horas de lecciones privadas cada mes", "6 horas de lecciones privadas cada mes", "8 horas de lecciones privadas cada mes"]
 let pricingStruct = [
     {price: store.state.region_prices.prices.two_hr_private, title: "Casual", includes: "2 horas de lecciones privadas cada mes"},
     {price: store.state.region_prices.prices.four_hr_private, title: "Normal", includes: "4 horas de lecciones privadas cada mes"},
     {price: store.state.region_prices.prices.six_hr_private, title: "Dedicado", includes: "6 horas de lecciones privadas cada mes"},
     {price: store.state.region_prices.prices.eight_hr_private, title: "Intenso", includes: "8 horas de lecciones privadas cada mes"},
 ];
+
+onMounted(() => {
+   
+})
+
 
 
 </script>

@@ -25,12 +25,17 @@
 </template>
 
 <script setup>
+import {useStore} from 'vuex';
+
+const store = useStore();
+
 let props = defineProps({
     price: Number,
     title: String,
     includes: String,
     currency: String,
 });
+
 </script>
 
 <style lang="scss" scoped>
