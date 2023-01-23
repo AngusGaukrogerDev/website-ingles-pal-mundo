@@ -6,7 +6,7 @@
         </svg>
     </div>
     <section id="#Inicio" class=" h-screen w-full bg-texttonehover flex  flex-col justify-center  mx-auto z-0 relative top-0 left-0">
-        <div class="py-8 px-4  mx-auto   text-left  lg:px-12">
+        <div class="py-8 px-4  mx-auto  mt-20   text-left  lg:px-16">
             <h1 class="aos-item sm:text-7xl text-5xl  py-2 " data-aos="fade-right">Clases de <strong class=" ">Inglés</strong></h1> 
             <h1 class="aos-item sm:text-7xl text-5xl  py-2 " data-aos="fade-right">Para <TransitionRoot
                 appear
@@ -109,7 +109,7 @@
 @media (min-width: 768px) {
     .custom-shape-divider-top-1673798750 svg {
         width: 138%;
-        height: 215px;
+        height: 200px;
     }
 }
 /** For Bigger Screens**/

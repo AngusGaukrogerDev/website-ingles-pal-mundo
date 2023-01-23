@@ -34,7 +34,7 @@
 
 <style lang="scss" scoped>
 .custom-shape-divider-bottom-1673798205 {
-    width: 100%;
+    width: 138%;
     overflow: hidden  ;
     
 }
