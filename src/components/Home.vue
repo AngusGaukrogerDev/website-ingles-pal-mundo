@@ -35,7 +35,6 @@
         return store.state.region_prices.prices;
     })
     const link = import.meta.env.VITE_LINK;
-    var localeId = ref("");
 
     /*Can be pulled from a backend in time*/ 
     const prices = {
@@ -91,14 +90,13 @@ function setRegion(region)
     switch(region)
     {
         case "Peru":
-            localeId.value = "pe";
+            
             break;
         case "Colombia":
-            localeId.value = "co";
+           
             break;
         case "United Kingdom":
-            localeId.value = "en";
-            // console.log(prices.en)
+
             store.dispatch('updatePrices', {
                 region: prices.en.region,
                 symbol: prices.en.symbol,
