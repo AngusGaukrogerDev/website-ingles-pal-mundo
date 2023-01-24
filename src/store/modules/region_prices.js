@@ -4,18 +4,20 @@ export default {
             region: "",
             symbol: "",
 
-            one_hr_private: 0,
-            two_hr_private: 0,
-            four_hr_private: 0,
-            six_hr_private: 0,
-            eight_hr_private: 0,
+            one_hr_private: "",
+            two_hr_private: "",
+            four_hr_private: "",
+            six_hr_private: "",
+            eight_hr_private: "",
             
-            beginner_group: 0,
-            pre_elementary_group: 0,
-            elementary_group: 0,
-            pre_intermediate_group: 0,
-            intermediate_group: 0,
-            pre_advanced_group: 0,
+            one_hr_group: "",
+
+            beginner_group: "",
+            pre_elementary_group: "",
+            elementary_group: "",
+            pre_intermediate_group: "",
+            intermediate_group: "",
+            pre_advanced_group: "",
     
         }
     }),
