@@ -219,6 +219,25 @@ function setRegion(region)
             });
             break;
         default:
+        store.dispatch('updatePrices', {
+                region: prices.us.region,
+                symbol: prices.us.symbol,
+
+                one_hr_private: prices.us.one_hr_private,
+                two_hr_private: prices.us.two_hr_private,
+                four_hr_private: prices.us.four_hr_private,
+                six_hr_private: prices.us.six_hr_private,
+                eight_hr_private: prices.us.eight_hr_private,
+                
+                one_hr_group: prices.us.one_hr_group,
+
+                beginner_group: prices.us.beginner_group,
+                pre_elementary_group: prices.us.pre_elementary_group,
+                elementary_group: prices.us.elementary_group,
+                pre_intermediate_group: prices.us.pre_intermediate_group,
+                intermediate_group: prices.us.intermediate_group,
+                pre_advanced_group: prices.us.pre_advanced_group,
+                });
             break;
     }
     console.log(localeId.value);
