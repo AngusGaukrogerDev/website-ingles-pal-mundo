@@ -13,11 +13,11 @@
             <div class="  grid grid-rows-3 grid-cols-2 gap-2 md:grid-cols-3 md:grid-rows-2 md:gap-6 content-around justify-between   text-texttone">
   
                 <CourseData :duration="duration[0]" :name="levels[0]" :details="details[0]" :price-tot="store.state.region_prices.prices.beginner_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
-                <CourseData :duration="duration[1]" :name="levels[1]" :details="details[1]" :price-tot="store.state.region_prices.prices.beginner_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
-                <CourseData :duration="duration[2]" :name="levels[2]" :details="details[2]" :price-tot="store.state.region_prices.prices.beginner_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
-                <CourseData :duration="duration[3]" :name="levels[3]" :details="details[3]" :price-tot="store.state.region_prices.prices.beginner_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
-                <CourseData :duration="duration[4]" :name="levels[4]" :details="details[4]" :price-tot="store.state.region_prices.prices.beginner_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
-                <CourseData :duration="duration[5]" :name="levels[5]" :details="details[5]" :price-tot="store.state.region_prices.prices.beginner_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
+                <CourseData :duration="duration[1]" :name="levels[1]" :details="details[1]" :price-tot="store.state.region_prices.prices.pre_elementary_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
+                <CourseData :duration="duration[2]" :name="levels[2]" :details="details[2]" :price-tot="store.state.region_prices.prices.elementary_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
+                <CourseData :duration="duration[3]" :name="levels[3]" :details="details[3]" :price-tot="store.state.region_prices.prices.pre_intermediate_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
+                <CourseData :duration="duration[4]" :name="levels[4]" :details="details[4]" :price-tot="store.state.region_prices.prices.intermediate_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
+                <CourseData :duration="duration[5]" :name="levels[5]" :details="details[5]" :price-tot="store.state.region_prices.prices.pre_advanced_group" :price-weekly="store.state.region_prices.prices.one_hr_group" />
 
             </div>
 

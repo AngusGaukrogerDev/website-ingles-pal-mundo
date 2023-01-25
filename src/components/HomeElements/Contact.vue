@@ -29,13 +29,13 @@
 
                             </div>     
                         
-                        <div class="flex justify-center">
-                            <!-- <VueRecaptcha
+                        <div class="flex flex-col justify-center">
+                            <VueRecaptcha
                                 :sitekey="siteKey"
                                 :load-recaptcha-script="true"
                                 @verify="handleSuccess"
                                 @error="handleError"
-                            ></VueRecaptcha> -->
+                            ></VueRecaptcha>
                             <button v-show="captchaSuccess" class="bg-gradient-to-r w-1/2  font-bold from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-3 border-5 aos-item" data-aos="fade-left" type="submit" value="Send Message">Envía Mensaje</button>     
                             <span  v-show="captchaError" class="text-red-500 flex justify-center">Error! No se funciona 😫!</span>
                             
@@ -64,8 +64,8 @@
     let showSuccess = ref(false);
     let showError = ref(false);
 
-    let siteKey = '';
-    let captchaSuccess = ref(true);
+    let siteKey = '6Lc4HBIkAAAAAOM7u41BI0zlrreYpwQCEpktDwZh';
+    let captchaSuccess = ref(false);
     let captchaError = ref(false);
 
     function formSubmit()
