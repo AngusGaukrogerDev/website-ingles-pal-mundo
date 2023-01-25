@@ -1,7 +1,7 @@
 <template>
     <div>
         
-        <section id="Programas" class=" border-y-2 border-fade1 relative bg-fade1 px-5 md:px-20 h-screen w-full sm:space-y-8 flex flex-col justify-center z-0">
+        <section id="Programas" class=" border-y-2 border-fade1 relative bg-fade1 px-5 md:px-20 h-screen w-full space-y-2 sm:space-y-8 flex flex-col justify-center z-0">
             <h1 class="sm:text-5xl text-2xl text-texttone text-center font-bold aos-item" data-aos="fade-right">Programas de Grupos</h1> 
             <h2 class="sm:text-xl text-md text-texttone text-center aos-item" data-aos="fade-up">Creemos que el inglés debería ser para todos. Por eso todos nuestros programas de grupo cuestan no más que {{ store.state.region_prices.prices.one_hr_group }} por hora! </h2>
             <!-- <h2 class="sm:text-2xl text-xl text-texttone text-center aos-item" data-aos="fade-up"> </h2> -->
