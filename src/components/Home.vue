@@ -1,15 +1,15 @@
-<template class=" ">
-        
-        <Navbar />
-        <Hero />
-        <Info />
-        <NuestrosProfesores />
-        <Cursos />
-        <LeccionesPrivadas />
-        <Contact />
-        <Footer />
-  
-    
+<template>
+        <Loader v-if="!pageReady" @complete="pageReady=true" />
+        <div v-if="pageReady">
+            <Navbar />
+            <Hero />
+            <Info />
+            <NuestrosProfesores />
+            <Cursos />
+            <LeccionesPrivadas />
+            <Contact />
+            <Footer />
+        </div>
 </template>
 
 <script setup>
@@ -27,6 +27,7 @@
 
     import {computed, onMounted, onBeforeMount,  ref} from 'vue';
     import {useStore} from 'vuex';
+    import Loader from './UIElements/Loader.vue';
     // import {i18n} from 'vue-i18n'
         
     const store = useStore();
@@ -36,6 +37,8 @@
     })
     const link = import.meta.env.VITE_LINK;
 
+    var pageReady = ref(false);
+    
     /*Can be pulled from a backend in time*/ 
     const prices = {
         us: {
