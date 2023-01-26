@@ -6,14 +6,16 @@
             </svg>
         </div>
         <section id="ClasesPrivadas" class="relative my-4 h-screen w-full flex flex-col sm:space-y-8 justify-center z-0">
+            <BookingPagePrivate @close-view="showBookingPage = false" v-show="showBookingPage" />
+
             <h1 class="text-fade1 sm:text-5xl text-2xl text-center font-bold md:py-2  aos-item" data-aos="fade-left">Clases Privadas</h1> 
             <h2 class="text-fade1 sm:text-3xl text-md text-center md:py-2 aos-item" data-aos="fade-right">Compra un paquete hoy y recibirás tu primera clase de 30 minutos <strong>totalmente gratis!</strong> </h2>
             <div  class="w-full h-100 text-texttone flex flex-row flex-wrap justify-around items-center">         
                  
-                    <Package :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.two_hr_private" :title="titles[0]" :includes="includes[0]" />
-                    <Package :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.four_hr_private" :title="titles[1]" :includes="includes[1]" />
-                    <Package :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.six_hr_private" :title="titles[2]" :includes="includes[2]" />
-                    <Package :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.eight_hr_private" :title="titles[3]" :includes="includes[3]" />
+                    <Package @to-booking="showBookingPage = true" :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.two_hr_private" :title="titles[0]" :includes="includes[0]" />
+                    <Package @to-booking="showBookingPage = true" :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.four_hr_private" :title="titles[1]" :includes="includes[1]" />
+                    <Package @to-booking="showBookingPage = true" :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.six_hr_private" :title="titles[2]" :includes="includes[2]" />
+                    <Package @to-booking="showBookingPage = true" :currency="store.state.region_prices.prices.symbol" :price="store.state.region_prices.prices.eight_hr_private" :title="titles[3]" :includes="includes[3]" />
              
             </div>
             <h2 class="text-fade1 sm:text-xl text-md text-center font-bold" data-aos="fade-left">Clases individuales cuestan {{ store.state.region_prices.prices.one_hr_private }} por hora.</h2>
@@ -27,12 +29,14 @@
 
 <script setup>
 import Package from '../UIElements/Package.vue';
+import BookingPagePrivate from '../UIElements/BookingPagePrivate.vue';
 import {useStore} from 'vuex';
+import{ref} from 'vue';
 
 const store = useStore();
 const titles = ["Casual", "Normal", "Dedicado", "Intenso"];
 const includes = ["2 horas de lecciones privadas cada mes", "4 horas de lecciones privadas cada mes", "6 horas de lecciones privadas cada mes", "8 horas de lecciones privadas cada mes"]
-
+var showBookingPage = ref(false);
 </script>
 
 <style lang="scss" scoped>

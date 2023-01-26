@@ -1,6 +1,6 @@
 <template>
     <div class=" bg-texttone text-fade1 flex flex-col justify-center items-center h-screen w-full ">
-        <h1 class="font-bold tex-2xl md:text-5xl animate__animated animate__slower animate__heartBeat" data-aos="fade-up">InglésPalMundo</h1>
+        <h1 class="font-bold tex-2xl md:text-5xl animate__animated animate__slower animate__heartBeat" data-aos="fade-up">Inglés Pal Mundo</h1>
     </div>
 </template>
 

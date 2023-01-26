@@ -122,7 +122,6 @@
         return response.json();
     })
     .then(function (payload) {
-        console.log(payload.location.country.name);
         setRegion(payload.location.country.name)
     });
 
@@ -243,7 +242,5 @@ function setRegion(region)
                 });
             break;
     }
-    console.log(localeId.value);
-    console.log(store.state.region_prices.prices);
 }
 </script>
