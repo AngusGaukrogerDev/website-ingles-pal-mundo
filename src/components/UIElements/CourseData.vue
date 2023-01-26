@@ -8,7 +8,7 @@
                 </div>
             
             <h1 class="text-sm font-bold xl:text-lg">{{ name }}</h1>
-            <h1 class="hidden md:flex">{{ details }}</h1>
+            <!-- <h1 class="hidden md:flex">{{ details }}</h1> -->
             <button class="bg-gradient-to-r from-main to-highlight hover:scale-105 text-texttone rounded-md border-texttone p-1 sm:p-3  ">
                 <strong>
                     Aprende más!
