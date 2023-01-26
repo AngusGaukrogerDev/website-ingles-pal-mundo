@@ -1,5 +1,5 @@
 <template>
-    <div class="left-0 top-0 absolute h-full w-full z-[1000] flex flex-col justify-center items-center backdrop-blur-2xl">
+    <div class="left-0 top-0 absolute h-full w-full z-[1000] flex flex-col justify-center items-center sm:backdrop-blur-2xl">
         <div class="bg-fade1 text-5xl  rounded-md border-4 border-texttone text-texttone h-3/4 w-3/4  z-[1000]  p-4 overflow-x-hidden overflow-y-auto md:inset-0 ">
             <div class="absolute h-auto w-auto top-1/4 right-1/4">
                 <button @click="emit('closeView')" class="hover:scale-110">

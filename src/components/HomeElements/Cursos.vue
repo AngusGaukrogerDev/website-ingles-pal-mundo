@@ -4,7 +4,7 @@
         <section id="Programas" class=" border-y-2 border-fade1 relative bg-fade1 px-5 md:px-20 h-screen w-full space-y-2 sm:space-y-8 flex flex-col justify-center z-0">
             <BookingPage @close-view="showBookingPage = false" v-show="showBookingPage" />
             <h1 class="sm:text-5xl text-2xl text-texttone text-center font-bold aos-item" data-aos="fade-right">Programas de Grupos</h1> 
-            <h2 class="sm:text-xl text-md text-texttone text-center aos-item" data-aos="fade-up">Creemos que el inglés debería ser para todos. Por eso todos nuestros programas de grupo cuestan no más que {{ store.state.region_prices.prices.one_hr_group }} por hora! </h2>
+            <h2 class="sm:text-xl text-md text-texttone text-center aos-item" data-aos="fade-left">Creemos que el inglés debería ser para todos. Por eso todos nuestros programas de grupo cuestan no más que {{ store.state.region_prices.prices.one_hr_group }} por hora! </h2>
             <!-- <h2 class="sm:text-2xl text-xl text-texttone text-center aos-item" data-aos="fade-up"> </h2> -->
             
             <div class="  grid grid-rows-3 grid-cols-2 gap-2 md:grid-cols-3 md:grid-rows-2 md:gap-6 content-around justify-between   text-texttone">
